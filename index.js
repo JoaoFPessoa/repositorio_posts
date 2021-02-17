@@ -3,7 +3,10 @@ const app = express();
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const Post = require('./models/Post');
+var path = require('path');
+
 // Config
+    app.use('/public', express.static(path.resolve(__dirname, 'public')))
     //Body Parser
     app.use(bodyParser.urlencoded({extended:false}));
     app.use(bodyParser.json());

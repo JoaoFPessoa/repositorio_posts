@@ -1,10 +1,10 @@
-<h1>Lista de posts: </h1>
+<h1>Noticias: </h1>
 
 {{#each posts}}
-<small>{{createdAt}}</small>
-    <h1>{{titulo}}</h1>
+<div  class="container">
+    <h2>{{titulo}}</h2>
     <p>{{conteudo}}</p>
-   <a href="/deletar/{{id}}"> <button>Deletar</button> </a>
+   <a href="/deletar/{{id}}"> <button class="buttonDeletar">Deletar</button> </a>
     <hr>
-
+</div>
     {{/each}}

@@ -22,7 +22,7 @@ var path = require('path');
 
 //Rotas
     app.get('/', function(req, res){
-        Post.findAll({order: [['id', 'DESC']]}).then(function(posts){
+        Post.findAll({order: [['id', 'ASC']]}).then(function(posts){
             res.render('home', {posts: posts})    
         })
         

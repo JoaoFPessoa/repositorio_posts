@@ -1,34 +1,96 @@
-.container {
-    background-color: blue;
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: darkorchid;
+    margin: 0;
+    padding: 0;
+  }
+.container_noticia {
+    background-color: grey;
     justify-content: center;
     display: inline-table;
     border-color: black;
     width: 25%;
     height: 500px;
-    border: 3px solid;
+    border: black solid;
     max-height: 600px;
     text-align: center;
     margin: 3%;
+    border-radius: 8px;
 }
-h1 {
-    justify-content: center;
+
+.titulo {
+    background-color: grey;
     text-align: center;
-    background-color: red;
-    border: 3px solid;
+    font-size: 20px;
+    height: 7vh;
+    font-family: fantasy;
+
 }
-h2 {
-    background-color: green;
-    text-align: center;
-}
-p {
+.conteudo {
     padding: 2%;
-    background-color: greenyellow;
+    background-color: grey;
     height: 70%;
     overflow: scroll;
 
 }
-.buttonDeletar {
-    display: block;
+.hrefbtnDeletar {
+    display: inline-block;
     justify-content: center;
-    margin-left: 35%;
+    height: 5%;
+}
+
+.buttonDeletar:hover {
+    border-color: cornflowerblue;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+    background-color: cornflowerblue;
+}
+.buttonDeletar:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.header {
+    width: 100%;
+    background-color: darkorange;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+    padding-top: 7px;
+    border: black solid 3px;
+    font-family: fantasy;
+}
+
+footer {
+    width: 100%;
+    background-color: darkorange;
+    padding: 0;
+    height: 90px;
+    padding-top: 7px;
+    border: black solid 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    display: block;
+    bottom: 0;
+}
+
+.brand {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.infoFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1%;
+
+}
+
+form {
+    height: 90%;
+    display: block;
+    padding-left: 1%;
 }

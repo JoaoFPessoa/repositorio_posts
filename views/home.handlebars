@@ -1,10 +1,14 @@
-<h1>Noticias: </h1>
+<header>
+    <h1 class="header">Noticias: </h1>
+</header>
 
 {{#each posts}}
-<div  class="container">
-    <h2>{{titulo}}</h2>
-    <p>{{conteudo}}</p>
-   <a href="/deletar/{{id}}"> <button class="buttonDeletar">Deletar</button> </a>
+
+<div  class="container_noticia">
+
+    <h2 class="titulo" >{{titulo}}</h2>
     <hr>
+    <p class="conteudo" >{{conteudo}}</p>
+   <a class="hrefbtnDeletar" href="/deletar/{{id}}"> <button class="buttonDeletar">Deletar</button> </a>
 </div>
     {{/each}}
